@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Туған күнге шақыру</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f4f4f2;
+      --card: #ffffff;
+      --text: #2f2f2f;
+      --muted: #7a7a7a;
+      --accent: #b08a57; /* жұмсақ алтын реңк */
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Noto Serif', serif;
+      background: url('https://wallpaperaccess.com/full/2009002.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      max-width: 720px;
+      width: 100%;
+      background: rgba(255,255,255,0.95);
+      padding: 96px 72px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 40px;
+      background: rgba(255,255,255,0.92);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .decor-top,
+    .decor-bottom {
+      width: 60px;
+      height: 1px;
+      background: var(--accent);
+      margin: 24px auto;
+      opacity: 0.6;
+    }
+
+    .ornament {
+      font-size: 0.9rem;
+      color: var(--accent);
+      letter-spacing: 0.3em;
+      margin: 12px 0;
+      opacity: 0.7;
+    }
+
+    .intro {
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+      text-transform: none;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .script {
+      font-family: 'Noto Serif', serif;
+      font-size: 2.6rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin: 12px 0 20px;
+    }
+
+    .name {
+      font-size: 2.1rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .age {
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 44px;
+    }
+
+    .details {
+      font-size: 1rem;
+      line-height: 1.9;
+      color: #444;
+      margin-bottom: 52px;
+    }
+
+    .details span { display: block; }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .link {
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .script { font-size: 2.4rem; }
+      .name { font-size: 1.6rem; }
+      .card {
+        padding: 72px 32px;
+      }
+      .card::before {
+        inset: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="content">
+      <div class="ornament">✦ ✦ ✦</div>
+      <div class="intro">Құрметті қонақтар!</div>
+
+      <div class="script">Туылған күн</div>
+
+      <div class="name">Перизат</div>
+      <div class="age">50 жас</div>
+
+      <div class="decor-top"></div>
+
+      <div class="details">
+        <span>Сіздерді 50 жас туылған күніне арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!</span>
+        <br />
+        <span>Жексенбі, 8 Ақпан</span>
+        <span>сағат 12:00</span>
+        <br />
+        <span>Мекен-жайы:</span>
+        <span>Сарыкемер ауылы, "Бегей" мейрамханасы</span>
+      </div>
+
+      <div class="decor-bottom"></div>
+
+      <div class="actions">
+        <!-- 2GIS link: replace coordinates or link as needed -->
+        <a class="link" href="https://2gis.kz/taraz/geo/70000001103000798" target="_blank">2GIS арқылы ашу</a>
+
+        <!-- WhatsApp RSVP -->
+        <a class="link" href="https://wa.me/+77774314032" target="_blank">WhatsApp арқылы жауап беру</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
